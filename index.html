@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Social media dashboard with theme switcher">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style-css.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>Frontend Mentor | Social media dashboard with theme switcher</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body class="theme-light">
+  <div class="header py-5">
+    <div class="container d-flex align-items-center justify-content-between">
+      <div class="social-text">
+        <h1>Social Media Dashboard</h1>
+        <span>Total Followers: 23,004</span>
+      </div>
+
+      <div class="mode-dark d-flex align-items-center gap-3">
+        <div class="mode-text">Dark Mode</div>
+        <div class="change-mode position-relative" data-mode="dark">
+          <div class="cycle-mode"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ============== social media group ================== -->
+  <div class="social-media-group ">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+          <div class="facebook-media position-relative d-flex justify-content-center align-items-center flex-column">
+            <div class="media-head position-absolute"></div>
+            <div class="face-profile d-flex gap-3 mb-3">
+              <img src="images/icon-facebook.svg" alt="">
+              <div class="name-facebook">@nathanf</div>
+            </div>
+            <div class="numbers-followers">1987</div>
+            <div class="name-followers mb-4">Followers</div>
+            <div class="today-up d-flex align-items-center gap-2">
+              <img src="images/icon-up.svg" alt="">
+              <div class="name-today">12 Today</div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+          <div class="facebook-media position-relative d-flex justify-content-center align-items-center flex-column">
+            <div class="media-head-2 position-absolute"></div>
+            <div class="face-profile d-flex gap-3 mb-3">
+              <img src="images/icon-twitter.svg" alt="">
+              <div class="name-facebook">@nathanf</div>
+            </div>
+            <div class="numbers-followers">1044</div>
+            <div class="name-followers mb-4">Followers</div>
+            <div class="today-up d-flex align-items-center gap-2">
+              <img src="images/icon-up.svg" alt="">
+              <div class="name-today">99 Today</div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+          <div class="facebook-media position-relative d-flex justify-content-center align-items-center flex-column">
+            <div class="media-head-3 position-absolute"></div>
+            <div class="face-profile d-flex gap-3 mb-3">
+              <img src="images/icon-instagram.svg" alt="">
+              <div class="name-facebook"> @realnathanf</div>
+            </div>
+            <div class="numbers-followers">11K</div>
+            <div class="name-followers mb-4">Followers</div>
+            <div class="today-up d-flex align-items-center gap-2">
+              <img src="images/icon-up.svg" alt="">
+              <div class="name-today">1099 Today</div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+          <div class="facebook-media position-relative d-flex justify-content-center align-items-center flex-column">
+            <div class="media-head-4 position-absolute"></div>
+            <div class="face-profile d-flex gap-3 mb-3">
+              <img src="images/icon-youtube.svg" alt="">
+              <div class="name-facebook">Nathan F.</div>
+            </div>
+            <div class="numbers-followers">8239</div>
+            <div class="name-followers mb-4">Subscribers</div>
+            <div class="today-up d-flex align-items-center gap-2">
+              <img src="images/icon-down.svg" alt="">
+              <div class="name-today-down">144 Today</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ================== overview - today ================ -->
+  <div class="overview-page">
+    <div class="container">
+      <div class="title-overview mb-3">Overview - Today</div>
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+          <div class="page-view">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+              <div class="name-page">Page Views</div>
+              <img src="images/icon-facebook.svg" alt="">
+            </div>
+            <div class="d-flex justify-content-between align-items-end">
+              <div class="number-view">87</div>
+              <div class="stock-num d-flex align-items-center gap-1">
+                <img src="images/icon-up.svg" alt="">
+                <div class="market-num">3%</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+          <div class="page-view">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+              <div class="name-page">Likes</div>
+              <img src="images/icon-facebook.svg" alt="">
+            </div>
+            <div class="d-flex justify-content-between align-items-end">
+              <div class="number-view">52</div>
+              <div class="stock-num d-flex align-items-center gap-1">
+                <img src="images/icon-down.svg" alt="">
+                <div class="market-num-2">2%</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+          <div class="page-view">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+              <div class="name-page">Likes</div>
+              <img src="images/icon-instagram.svg" alt="">
+            </div>
+            <div class="d-flex justify-content-between align-items-end">
+              <div class="number-view">5462</div>
+              <div class="stock-num d-flex align-items-center gap-1">
+                <img src="images/icon-up.svg" alt="">
+                <div class="market-num">2257%</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+          <div class="page-view">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+              <div class="name-page">Profile Views</div>
+              <img src="images/icon-instagram.svg" alt="">
+            </div>
+            <div class="d-flex justify-content-between align-items-end">
+              <div class="number-view">52K</div>
+              <div class="stock-num d-flex align-items-center gap-1">
+                <img src="images/icon-up.svg" alt="">
+                <div class="market-num">1375%</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+          <div class="page-view">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+              <div class="name-page">Retweets</div>
+              <img src="images/icon-twitter.svg" alt="">
+            </div>
+            <div class="d-flex justify-content-between align-items-end">
+              <div class="number-view">117</div>
+              <div class="stock-num d-flex align-items-center gap-1">
+                <img src="images/icon-up.svg" alt="">
+                <div class="market-num">303%</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+          <div class="page-view">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+              <div class="name-page">Likes</div>
+              <img src="images/icon-twitter.svg" alt="">
+            </div>
+            <div class="d-flex justify-content-between align-items-end">
+              <div class="number-view">507</div>
+              <div class="stock-num d-flex align-items-center gap-1">
+                <img src="images/icon-up.svg" alt="">
+                <div class="market-num">553%</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+          <div class="page-view">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+              <div class="name-page">Likes</div>
+              <img src="images/icon-youtube.svg" alt="">
+            </div>
+            <div class="d-flex justify-content-between align-items-end">
+              <div class="number-view">107</div>
+              <div class="stock-num d-flex align-items-center gap-1">
+                <img src="images/icon-down.svg" alt="">
+                <div class="market-num-2">19%</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+          <div class="page-view">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+              <div class="name-page">Total Views</div>
+              <img src="images/icon-youtube.svg" alt="">
+            </div>
+            <div class="d-flex justify-content-between align-items-end">
+              <div class="number-view">1407</div>
+              <div class="stock-num d-flex align-items-center gap-1">
+                <img src="images/icon-down.svg" alt="">
+                <div class="market-num-2">12%</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 
+
+  
+
+  Retweets
+  117
+  303%
+
+  Likes
+  507
+  553%
+
+  Likes
+  107
+  19%
+
+  Total Views
+  1407
+  12% -->
+  <script src="main.js"></script>
+</body>
+
+</html>

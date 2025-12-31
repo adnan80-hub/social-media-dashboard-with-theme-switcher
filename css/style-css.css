@@ -1,0 +1,284 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --color-green-500: hsl(163, 72%, 41%);
+    --color-red-500: hsl(356, 69%, 56%);
+    --color-blue-facebook-600: hsl(208, 92%, 53%);
+    --color-blue-twitter-500: hsl(203, 89%, 53%);
+    --color-linear-gradient: linear-gradient(to left, hsl(37, 97%, 70%), hsl(5, 77%, 71%), hsl(329, 70%, 58%));
+    --color-red-youtube-700: hsl(348, 97%, 39%);
+    /* =========== theme-light =========== */
+    --light-theme-toggle: hsl(230, 22%, 74%);
+    --inside-theme: linear-gradient(to left, hsl(230, 22%, 74%));
+    --color-bg: hsl(0, 100%, 100%);
+    --color-top-bg-pattern: hsl(225, 100%, 98%);
+    --color-card-bg: hsl(227, 47%, 96%);
+    --color-400-text: hsl(228, 12%, 44%);
+    --color-white: hsl(230, 17%, 14%);
+}
+
+
+body {
+    font-family: "Inter", sans-serif !important;
+    background-color: var(--color-bg) !important;
+
+}
+
+body.theme-light {
+    --color-bg: hsl(0, 100%, 100%);
+    --color-top-bg-pattern: hsl(225, 100%, 98%);
+    --color-card-bg: hsl(227, 47%, 96%);
+    --color-400-text: hsl(228, 12%, 44%);
+    --color-white: hsl(230, 17%, 14%);
+}
+
+body.theme-dark {
+    --color-bg: hsl(230, 17%, 14%);
+    --color-top-bg-pattern: hsl(232, 19%, 15%);
+    --color-card-bg: hsl(228, 28%, 20%);
+    --color-400-text: hsl(230, 22%, 74%);
+    --color-white-text: hsl(0, 100%, 100%);
+    --color-white: hsl(0, 100%, 100%);
+    --theme-toggle: hsl(0, 100%, 100%);
+    --inside-theme: linear-gradient(to left, hsl(210, 79%, 56%), hsl(146, 68%, 55%));
+}
+
+.social-text h1 {
+    font-weight: 700;
+    color: var(--color-white);
+}
+
+.social-text span {
+    color: var(--color-400-text);
+    font-weight: 700;
+}
+
+.mode-dark .mode-text {
+    color: var(--light-theme-toggle);
+    font-weight: 700;
+}
+
+
+.mode-dark .change-mode {
+    width: 70px;
+    height: 31px;
+    border-radius: 30px;
+    background-image: var(--inside-theme);
+    padding: 5px 4px;
+    cursor: pointer;
+    transition: 0.5s !important;
+}
+
+
+.mode-dark .change-mode .cycle-mode {
+    position: absolute;
+    top: 4px;
+    right: 5px;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background-color: var(--color-bg);
+    transition: 0.3s !important;
+}
+
+@media (max-width: 530px) {
+    .header .container {
+
+        flex-direction: column !important;
+    }
+
+    .social-text {
+        width: 100%;
+
+        margin-bottom: 2.5rem;
+        border-bottom: 1px solid var(--color-400-text);
+        padding-bottom: 2rem;
+    }
+
+    .mode-dark {
+        width: 100%;
+        justify-content: space-between !important;
+    }
+}
+
+/* =================== SOCIAL MEDIA ================ */
+
+.social-media-group {
+    margin-bottom: 2rem;
+}
+
+.facebook-media {
+    background-color: var(--color-card-bg);
+    padding: 2rem 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+.facebook-media .media-head,
+.facebook-media .media-head-2,
+.facebook-media .media-head-3,
+.facebook-media .media-head-4 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: var(--color-blue-facebook-600);
+}
+
+.facebook-media .media-head-2 {
+    background-color: var(--color-blue-twitter-500);
+}
+
+.facebook-media .media-head-3 {
+    background-image: var(--color-linear-gradient);
+}
+
+.facebook-media .media-head-4 {
+    background-color: var(--color-red-youtube-700);
+}
+
+
+.facebook-media .face-profile .name-facebook {
+    font-size: 14px;
+    color: var(--color-white);
+}
+
+.facebook-media .face-profile img {
+    width: 23px;
+    object-fit: cover;
+}
+
+.facebook-media .numbers-followers {
+    font-size: 70px;
+    font-weight: 700;
+    color: var(--color-white);
+}
+
+.facebook-media .name-followers {
+    text-transform: uppercase;
+    color: var(--color-400-text);
+    letter-spacing: 7px;
+}
+
+.facebook-media .today-up img {
+    object-fit: cover;
+    height: 5px;
+}
+
+.facebook-media .today-up .name-today,
+.facebook-media .today-up .name-today-down {
+    color: var(--color-green-500);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.facebook-media .today-up .name-today-down {
+    color: var(--color-red-500);
+}
+
+
+/* =============== overview - today ======================= */
+
+.overview-page .title-overview {
+    color: var(--color-400-text);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.page-view {
+    background-color: var(--color-card-bg);
+    border-radius: 10px;
+    padding: 18px 28px;
+}
+
+.page-view .name-page {
+    color: var(--color-400-text);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.page-view img {
+    width: 23px;
+}
+
+.number-view {
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--color-white);
+}
+
+.stock-num img {
+    width: 10px;
+}
+
+.stock-num .market-num,
+.stock-num .market-num-2 {
+    color: var(--color-green-500);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.stock-num .market-num-2 {
+    color: var(--color-red-500);
+}
+
+/* .mode-dark .change-mode:hover .cycle-mode {
+    right: 43px;
+} */
+
+
+/* 
+- Mobile: 375px
+- Desktop: 1440px
+
+- Green 500: hsl(163, 72%, 41%)
+- Red 500: hsl(356, 69%, 56%)
+
+- Blue 600 (Facebook): hsl(208, 92%, 53%)
+- Blue 500 (Twitter): hsl(203, 89%, 53%)
+- Linear gradient (Instagram): hsl(37, 97%, 70%) to hsl(5, 77%, 71%) to hsl(329, 70%, 58%)
+- Red 700 (YouTube): hsl(348, 97%, 39%)
+
+#### Dark Theme
+
+- Linear gradient (Toggle): hsl(210, 79%, 56%) to hsl(146, 68%, 55%)
+
+#### Light Theme
+
+- Gray 400 (Toggle): hsl(230, 22%, 74%)
+
+### Neutral
+
+#### Dark Theme
+
+- Gray 950 (BG): hsl(230, 17%, 14%)
+- Gray 900 (Top BG Pattern): hsl(232, 19%, 15%)
+- Navy 950 (Card BG): hsl(228, 28%, 20%)
+- Gray 400 (Text): hsl(230, 22%, 74%)
+- White (Text): hsl(0, 100%, 100%)
+
+#### Light Theme
+
+- White (BG): hsl(0, 100%, 100%)
+- Blue 50 (Top BG Pattern): hsl(225, 100%, 98%)
+- Navy 50 (Card BG): hsl(227, 47%, 96%)
+- Gray 650 (Text): hsl(228, 12%, 44%)
+- Gray 950 (Text): hsl(230, 17%, 14%)
+
+## Typography
+
+### Body Copy
+
+- Font size (Overview Card Headings): 14px
+
+### Font
+
+- Family: [Inter](https://fonts.google.com/specimen/Inter)
+- Weights: 400, 700
+
+> 💎 [Upgrade to Pro](https://www.frontendmentor.io/pro?ref=style-guide) for design file access to see all design details and get hands-on experience using a professional workflow with tools like Figma. */
