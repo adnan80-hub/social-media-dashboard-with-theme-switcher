@@ -13,10 +13,8 @@ change_mode.addEventListener("click", function (e) {
 
 // ========================
 
-function moveZeros(arr) {
-    let first = arr.filter((ele) => ele === 0);
-    let second = arr.filter((ele) => ele !== 0);
-    return [...second, ...first]
+function pigIt(str) {
+    return str.split(" ").map((ele) => ele.slice(1) + ele[0] + "ay").join(" ")
 }
 
-console.log(moveZeros([false, 1, 0, 1, 2, 0, 1, 3, "a"])) //[false , 1,1,2,1,3,"a",0,0]
+console.log(pigIt("Pig latin is cool")) // igPay atinlay siay oolcay

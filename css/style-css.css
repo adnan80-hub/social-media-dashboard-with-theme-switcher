@@ -86,7 +86,7 @@ body.theme-dark {
 }
 
 @media (max-width: 530px) {
-    .header .container {
+    header .container {
 
         flex-direction: column !important;
     }
