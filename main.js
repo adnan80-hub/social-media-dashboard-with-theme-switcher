@@ -1,5 +1,5 @@
-let change_mode = document.querySelector(".change-mode");
-let cycle_mode = document.querySelector(".cycle-mode");
+const change_mode = document.querySelector(".change-mode");
+const cycle_mode = document.querySelector(".cycle-mode");
 
 change_mode.addEventListener("click", function (e) {
     if (document.body.className === "theme-light") {
